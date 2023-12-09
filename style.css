@@ -32,10 +32,14 @@
   width: 40px;
 }
 #task {
-  height: 42px;
-  border-radius: 14px;
+  height: 38px;
+  border: none;
+  margin: 4px;
   width: 330px;
+  border: none;
+  outline: none;
 }
+
 .btn {
   height: 30px;
   width: 40px;
@@ -43,8 +47,9 @@
   background-color: #346fe1;
   color: white;
 }
-footer {
-  position: relative;
-  top: 300px;
-  left: 12px;
+.footer {
+  padding-left: 4px;
+  /* padding: auto; */
+  border: 2px solid red;
+  border-radius: 14px;
 }
