@@ -6,7 +6,7 @@
 }
 .container {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-image: linear-gradient(180deg, #cc96b8, #c2d84b);
   display: flex;
   align-items: center;
@@ -14,7 +14,7 @@
 }
 .main {
   width: 400px;
-  height: 400px;
+  min-height: 100vh;
   border: 2px solid white;
   background-color: white;
   color: black;
@@ -52,4 +52,14 @@
   /* padding: auto; */
   border: 2px solid red;
   border-radius: 14px;
+}
+.content {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* border: 2px solid blue; */
+}
+.tick {
+  height: 30px;
+  width: 30px;
 }
