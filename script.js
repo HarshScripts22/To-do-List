@@ -27,10 +27,16 @@ output.addEventListener("click", function (e) {
   if (e.target.classList.contains("untick")) {
     e.target.setAttribute("src", "./empty.png");
     e.target.classList.remove("untick");
+    // output.style.textDecoration = "none";
   } else if (e.target.classList.contains("tick")) {
     // console.log("hello world");
     e.target.setAttribute("src", "./checkbox.png");
     e.target.classList.add("untick");
-    console.log(e.target);
+    // console.log(e.target);
+
+    if (e.target.parentNode.parentNode == output) {
+      // console.log(e.target.parentNode.parentNode);
+      output.style.textDecoration = "line-through";
+    }
   }
 });
