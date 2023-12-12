@@ -27,7 +27,7 @@ output.addEventListener("click", function (e) {
   if (e.target.classList.contains("untick")) {
     e.target.setAttribute("src", "./empty.png");
     e.target.classList.remove("untick");
-    // output.style.textDecoration = "none";
+    output.style.textDecoration = "none";
   } else if (e.target.classList.contains("tick")) {
     // console.log("hello world");
     e.target.setAttribute("src", "./checkbox.png");
