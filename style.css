@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 .container {
-  width: 100%;
+  min-width: 100%;
   min-height: 100vh;
   background-image: linear-gradient(180deg, #cc96b8, #c2d84b);
   display: flex;
@@ -13,7 +13,7 @@
   justify-content: center;
 }
 .main {
-  width: 400px;
+  min-width: 400px;
   min-height: 100vh;
   border: 2px solid white;
   background-color: white;
@@ -50,22 +50,19 @@
 .footer {
   padding-left: 4px;
   /* padding: auto; */
-  border: 2px solid red;
+  border: 2px solid #346fe1;
   border-radius: 14px;
 }
 .content {
   display: flex;
   margin-top: 10px;
   margin-bottom: 10px;
-  /* border: 2px solid blue; */
 }
 .tick {
   height: 30px;
   width: 30px;
 }
 .delete {
-  /* float: right; */
-  /* border: 2px solid red; */
 }
 .cut {
   height: 30px;
