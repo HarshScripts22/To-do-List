@@ -35,11 +35,13 @@ btn.addEventListener("click", function (e) {
   newDiv.appendChild(del);
   inputElement.value = "";
 
-  cross.addEventListener("click", function (e) {
-    let divtoremove = document.querySelector(".content");
-    console.log(divtoremove);
-    divtoremove.remove();
-  });
+  // cross.addEventListener("click", function (e) {
+  //   console.log(e.target.parentNode.parentNode);
+
+  //   let divtoremove = document.querySelector(".content");
+  //   console.log(divtoremove);
+  //   divtoremove.remove();
+  // });
 });
 output.addEventListener("click", function (e) {
   if (e.target.classList.contains("untick")) {
@@ -54,5 +56,9 @@ output.addEventListener("click", function (e) {
     console.log(e.target);
     let y = e.target.parentNode;
     y.childNodes[1].style.textDecoration = "line-through";
+  } else if (e.target.classList.contains("cut")) {
+    console.log(e.target.parentNode.parentNode);
+    let divtoremove = e.target.parentNode.parentNode;
+    divtoremove.remove();
   }
 });
