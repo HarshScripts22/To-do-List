@@ -16,12 +16,30 @@ btn.addEventListener("click", function (e) {
 
   tick.classList.add("tick");
 
+  // this div is  created to delete the newDiv list content at one go
+  let del = document.createElement("div");
+  del.classList.add("delete");
+  let cross = document.createElement("img");
+  cross.classList.add("cut");
+  cross.setAttribute("src", "./bin.png");
+  cross.setAttribute("alt", "error");
+
   let newDiv = document.createElement("div");
   newDiv.classList.add("content");
   output.appendChild(newDiv);
+  // here we append the del name div into output span...and no we will add img into this div
+
+  del.appendChild(cross);
   newDiv.appendChild(tick);
   newDiv.appendChild(h2);
+  newDiv.appendChild(del);
   inputElement.value = "";
+
+  cross.addEventListener("click", function (e) {
+    let divtoremove = document.querySelector(".content");
+    console.log(divtoremove);
+    divtoremove.remove();
+  });
 });
 output.addEventListener("click", function (e) {
   if (e.target.classList.contains("untick")) {

@@ -63,6 +63,11 @@
   height: 30px;
   width: 30px;
 }
-.notes {
-  /* text-decoration: line-through; */
+.delete {
+  /* float: right; */
+  /* border: 2px solid red; */
+}
+.cut {
+  height: 30px;
+  width: 30px;
 }
