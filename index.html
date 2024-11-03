@@ -7,18 +7,24 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- **** Background Circles Start **** -->
+    <div class="bg-circles">
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+      <div class="circle-3"></div>
+      <div class="circle-4"></div>
+    </div>
+
+    <!-- **** List Container Start Here **** -->
+
     <div class="container">
-      <div class="main">
-        <div class="nav">
-          <img src="./to-do-list.png" alt="Error" class="img" />
-          <h2>To-Do-List</h2>
+      <div class="todo-app">
+        <h2><img src="images/list1.png" alt="" />To-Do List</h2>
+        <div class="row">
+          <input type="text" id="input-box" placeholder="Add your task ..." />
+          <button onclick="addTask()" id="add">Add</button>
         </div>
-        <br />
-        <div class="footer">
-          <input type="text" name="list" placeholder="Add Task..." id="task" />
-          <button class="btn">+</button>
-        </div>
-        <span id="output"></span>
+        <ul id="list-container"></ul>
       </div>
     </div>
     <script src="script.js"></script>
